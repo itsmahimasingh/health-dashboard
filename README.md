@@ -1,5 +1,7 @@
 # Personal Health Dashboard
 
+**Live demo:** [Open the app](https://health-dashboard-gubezx7v9c7bqp3mdgxebt.streamlit.app)
+
 A health tracking and diabetes screening website built with Python and Streamlit, made for Indian users
 (Indian foods, chai, and the Indian Diabetes Risk Score).
 
