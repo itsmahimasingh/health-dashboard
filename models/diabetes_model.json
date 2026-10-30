@@ -1,0 +1,103 @@
+{
+  "name": "Diabetes risk model (logistic regression)",
+  "trained_on": "2026-10-30",
+  "sklearn_version": "1.9.1",
+  "features": [
+    "Glucose",
+    "BMI",
+    "Age",
+    "Pregnancies"
+  ],
+  "mean": [
+    121.67101,
+    32.448208,
+    33.36645,
+    3.819218
+  ],
+  "scale": [
+    29.979351,
+    6.818562,
+    11.823798,
+    3.311448
+  ],
+  "coef": [
+    1.161866,
+    0.713784,
+    0.150326,
+    0.352878
+  ],
+  "intercept": -0.873429,
+  "median": [
+    117.0,
+    32.4,
+    29.0,
+    3.0
+  ],
+  "threshold": 0.27,
+  "target_recall": 0.8,
+  "test_metrics": {
+    "roc_auc": 0.802,
+    "accuracy": 0.721,
+    "recall": 0.796,
+    "precision": 0.573,
+    "specificity": 0.68
+  },
+  "confusion_matrix": {
+    "tn": 68,
+    "fp": 32,
+    "fn": 11,
+    "tp": 43
+  },
+  "cv_comparison": [
+    {
+      "Inputs": "All 8 inputs",
+      "Model": "Logistic regression",
+      "ROC AUC": 0.843,
+      "AUC spread (std)": 0.019,
+      "Accuracy": 0.788
+    },
+    {
+      "Inputs": "All 8 inputs",
+      "Model": "Random forest",
+      "ROC AUC": 0.834,
+      "AUC spread (std)": 0.021,
+      "Accuracy": 0.769
+    },
+    {
+      "Inputs": "All 8 inputs",
+      "Model": "Gradient boosting",
+      "ROC AUC": 0.821,
+      "AUC spread (std)": 0.015,
+      "Accuracy": 0.756
+    },
+    {
+      "Inputs": "4 app inputs",
+      "Model": "Logistic regression",
+      "ROC AUC": 0.842,
+      "AUC spread (std)": 0.016,
+      "Accuracy": 0.783
+    },
+    {
+      "Inputs": "4 app inputs",
+      "Model": "Random forest",
+      "ROC AUC": 0.83,
+      "AUC spread (std)": 0.024,
+      "Accuracy": 0.772
+    },
+    {
+      "Inputs": "4 app inputs",
+      "Model": "Gradient boosting",
+      "ROC AUC": 0.815,
+      "AUC spread (std)": 0.025,
+      "Accuracy": 0.751
+    }
+  ],
+  "dataset": {
+    "name": "Pima Indians Diabetes Database (NIDDK)",
+    "rows": 768,
+    "train_rows": 614,
+    "test_rows": 154,
+    "share_with_diabetes": 0.349,
+    "population": "Women aged 21+ of Pima heritage near Phoenix, Arizona"
+  }
+}
